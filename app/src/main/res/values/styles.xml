@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--标签View的自定义属性-->
+    <declare-styleable name="LabelTextView">
+        <!--标签内要展示的文字-->
+        <attr name="labelText" format="string"/>
+        <!--标签的背景颜色-->
+        <attr name="labelBgColor" format="color"/>
+        <!--标签中的文字的颜色-->
+        <attr name="labelTextColor" format="color"/>
+        <!--标签的大小，单位：dp。因为宽=高，所以，指定一个就行-->
+        <attr name="labelSize" format="integer"/>
+    </declare-styleable>
+
+</resources>

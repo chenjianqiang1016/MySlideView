@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.demo.myslideview.MySlideRootView
+        android:id="@+id/mySlideView"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--左-->
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#55ff0000"
+                android:orientation="vertical">
+
+                <com.demo.myslideview.LabelTextView
+                    android:id="@+id/label_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    app:labelBgColor="#ffffff"
+                    app:labelSize="40"
+                    app:labelText="经济"
+                    app:labelTextColor="#000000" />
+
+                <com.demo.myslideview.LabelTextView
+                    android:id="@+id/label_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    app:labelBgColor="#ffffff"
+                    app:labelSize="40"
+                    app:labelText="政治"
+                    app:labelTextColor="#000000" />
+
+                <com.demo.myslideview.LabelTextView
+                    android:id="@+id/label_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    app:labelBgColor="#ffffff"
+                    app:labelSize="40"
+                    app:labelText="文化"
+                    app:labelTextColor="#000000" />
+
+            </LinearLayout>
+
+            <!--右-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#5500ff00"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/myTv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="50dp"
+                        android:background="#ffffff"
+                        android:padding="5dp"
+                        android:text="切换1"
+                        android:textSize="30dp" />
+
+                    <com.demo.myslideview.MyTextView
+                        android:id="@+id/myTv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="50dp"
+                        android:background="#ffffff"
+                        android:padding="5dp"
+                        android:text="切换2"
+                        android:textSize="30dp" />
+
+                    <com.demo.myslideview.MyLinearLayout
+                        android:id="@+id/myLinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="50dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/myTv_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="#ffffff"
+                            android:padding="5dp"
+                            android:textSize="30dp"
+                            android:text="切换3" />
+
+                    </com.demo.myslideview.MyLinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.demo.myslideview.MySlideRootView>
+
+</LinearLayout>
